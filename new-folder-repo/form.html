@@ -5,14 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/nav.css">
     <title>Document</title>
+    <style>
+
+    </style>
 </head>
 
 <body>
-    <h1>This is form</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="semantic.html">Semantic</a></li>
+                <li><a href="index.html">Index
+                        <ul class="dropdown">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="form.html">Form</a></li>
+                            <li><a href="table.html">Table</a></li>
+                            <li><a href="semantic.html">Semantic</a></li>
+                        </ul>
+                    </a></li>
+            </ul>
+        </nav>
+        <h1>This is form</h1>
+    </header>
+
     <form action="">
         <p><label for="name">Name: <input type="text" name="text" placeholder="Type yout name" id="name"> </label></p>
         <p><label for="email">Email: <input type="email" name="name" placeholder="Type your email" id="email"> </label>
+        </p>
+        <p>Your area:
+            <select name="" id="">
+                <option value="binodpur">Binodpur</option>
+                <option value="kajla">Kajla</option>
+                <option value="talaimari">Talaimari</option>
+                <option value="katakhali">Katakhali</option>
+            </select>
         </p>
         <fieldset>
             <legend>Select your pitha:</legend>
